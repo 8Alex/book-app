@@ -1,0 +1,27 @@
+@import '../../assets/styles/vars.scss';
+
+.header {
+  &__container {
+    @extend %container;
+  }
+
+  &__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100px;
+  }
+
+  &__logo {
+    width: 97px;
+    height: 90px;
+  }
+
+  &__menu {
+    margin: 0px 0px 0px 100px;
+
+    @media (max-width: $mobile) {
+      margin: 0px 0px 0px 50px;
+    }
+  }
+}

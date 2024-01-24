@@ -1,0 +1,25 @@
+@import '../../assets/styles/vars.scss';
+
+.main {
+  flex: 1 1 auto;
+
+  &__container {
+    @extend %container;
+  }
+
+  &__centre-block {
+    padding: 90px 0px 70px 0px;
+  }
+
+  &__recommended {
+    padding-bottom: 90px;
+  }
+
+  &__top-sellers {
+    padding-bottom: 90px;
+  }
+
+  &__news {
+    padding-bottom: 70px;
+  }
+}

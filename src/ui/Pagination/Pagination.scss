@@ -1,0 +1,19 @@
+@import '../../assets/styles/vars.scss';
+
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+  .page {
+    padding: 10px;
+    border: 1px solid $generalColor;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &__current {
+      border: 2px solid $varTextColor;
+    }
+  }
+}

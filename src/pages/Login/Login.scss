@@ -1,0 +1,27 @@
+@import '../../assets/styles/vars.scss';
+
+.login {
+  flex: 1 1 auto;
+
+  &__container {
+    @extend %container;
+  }
+
+  &__body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  &__form {
+    input {
+      padding: 15px 30px;
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 7px 40px;
+    }
+  }
+}

@@ -1,0 +1,95 @@
+@import '../../assets/styles/vars.scss';
+
+.footer {
+  &__container {
+    @extend %container;
+  }
+
+  &__body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding-bottom: 20px;
+
+    @media (max-width: $tablet) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__logo {
+    width: 97px;
+    height: 90px;
+    margin-bottom: 40px;
+  }
+
+  &__icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    column-gap: 50px;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    @media (max-width: $tablet) {
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+  }
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 100px;
+  column-gap: 40px;
+  max-width: 580px;
+
+  @media (max-width: $tablet) {
+    row-gap: 50px;
+    max-width: 100%;
+  }
+
+  &__link {
+    font-size: 18px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.subscribe-block {
+  &__text {
+    font-size: 16px;
+    white-space: pre-line;
+    padding: 38px 0px 38px 0px;
+  }
+
+  &__subscription {
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+
+    @media (max-width: $tablet) {
+      margin-bottom: 50px;
+    }
+  }
+
+  &__input {
+    input {
+      height: 36px;
+      background-color: $bgInputColor;
+      border-radius: 8px 0px 0px 8px;
+      border: 0.9px solid $generalColor;
+      padding: 7px 73px 7px 25px;
+    }
+  }
+
+  &__btn {
+    height: 36px;
+    border-radius: 0px 8px 8px 0px;
+  }
+}

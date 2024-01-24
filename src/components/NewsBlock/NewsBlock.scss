@@ -1,0 +1,57 @@
+@import '../../assets/styles/vars.scss';
+
+.news {
+  &__header {
+    @extend %header-block;
+  }
+
+  &__body {
+    display: flex;
+    gap: 20px;
+
+    @media (max-width: $tablet) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__column {
+    flex: 0 1 50%;
+
+    @media (max-width: $tablet) {
+      flex: 0 1 100%;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    padding: 17px 20px 17px 40px;
+  }
+
+  &__content {
+    flex: 1 1 auto;
+    margin-right: 40px;
+
+    & > *:not(:last-child) {
+      margin: 0px 0px 25px 0px;
+    }
+  }
+
+  &__title {
+    font-size: 16px;
+  }
+
+  &__text {
+    max-width: 386px;
+    font-size: 14px;
+  }
+
+  &__image {
+    flex: 0 0 123px;
+  }
+
+  &__line {
+    width: 50px;
+    border-bottom: 2px solid $generalColor;
+  }
+}

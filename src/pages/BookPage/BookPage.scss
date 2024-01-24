@@ -1,0 +1,51 @@
+@import '../../assets/styles/vars.scss';
+
+.book {
+  flex: 1 1 auto;
+
+  &__container {
+    @extend %container;
+  }
+
+  &__loader {
+    @extend %loader-block;
+    align-items: flex-start;
+    height: 100vh;
+    padding-top: 0px;
+  }
+
+  &__body {
+    height: 100vh;
+    padding: 90px 0px 70px 0px;
+  }
+
+  &__item {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__content {
+    & > *:not(:last-child) {
+      margin: 0px 0px 20px 0px;
+    }
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  &__link {
+    padding-top: 20px;
+
+    a {
+      display: flex;
+      align-items: center;
+      font-weight: bold;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

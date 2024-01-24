@@ -1,0 +1,36 @@
+/* Breakpoints */
+$smallMobile: 479px;
+$mobile: 639px;
+$tablet: 959px;
+$desktop: 1199px;
+
+/* Colors */
+$generalColor: #ffce1a;
+$bgColor: #fdcb6e;
+$textColor: #0d0842;
+$buttonTextColor: #fffff8;
+$varTextColor: #0d084285;
+$bgSelectColor: #eaeaeae5;
+$bgInputColor: #ffffff;
+
+/* Container */
+%container {
+  max-width: 1200px;
+  padding: 0px 50px;
+  margin: 0 auto;
+  box-sizing: content-box;
+  background-color: #ffffff;
+}
+
+/* Header*/
+%header-block {
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+
+/* Loader */
+%loader-block {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}

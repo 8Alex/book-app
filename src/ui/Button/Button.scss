@@ -1,0 +1,26 @@
+@import '../../assets/styles/vars.scss';
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $generalColor;
+  color: $buttonTextColor;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 7px 49px;
+  min-height: 36px;
+  line-height: 150%;
+  cursor: pointer;
+
+  & img {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+  }
+
+  &:hover {
+    background-color: $textColor;
+  }
+}

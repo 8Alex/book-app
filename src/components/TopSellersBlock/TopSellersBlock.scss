@@ -1,0 +1,11 @@
+@import '../../assets/styles/vars.scss';
+
+.top-sellers {
+  &__header {
+    @extend %header-block;
+  }
+
+  &__loader {
+    @extend %loader-block;
+  }
+}

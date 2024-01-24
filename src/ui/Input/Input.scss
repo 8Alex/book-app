@@ -1,0 +1,8 @@
+@import '../../assets/styles/vars.scss';
+
+.input {
+  color: $textColor;
+  background-color: $bgSelectColor;
+  border-radius: 8px;
+  padding: 7px 10px;
+}

@@ -1,0 +1,27 @@
+.menu {
+  padding: 5px 0px;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-self: center;
+  }
+
+  &__item {
+    padding: 0px 20px 0px 0px;
+  }
+
+  &__link {
+    &_account {
+      width: 18px;
+      height: 22px;
+    }
+
+    &_favorite {
+      width: 25px;
+      height: 20px;
+    }
+  }
+}
