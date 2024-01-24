@@ -6,7 +6,7 @@
 
 - React
 - Redux
-- Typescript
+- TypeScript
 - JavaScript
 - SCSS
 - HTML5/CSS3
