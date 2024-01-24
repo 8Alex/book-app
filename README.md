@@ -1,5 +1,7 @@
 ### Приложение для просмотра книг
 
+![image](https://github.com/8Alex/book-app/assets/91260590/d4e87fcf-0aca-4c0f-9d85-aa9beca600e3)
+
 #### Используемые технологии:
 
 - React
