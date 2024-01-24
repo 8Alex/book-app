@@ -19,7 +19,7 @@ export default class BookService {
 
   static async getTopSellersBooks() {
     const response = await fetch(
-      'https://www.googleapis.com/books/v1/volumes?q=book+best+seller&printType=books&maxResults=6&key=AIzaSyC21UAOm0ycghpyA2cBCFrhAQtNyt1Zv7g'
+      'https://www.googleapis.com/books/v1/volumes?q=book+best+seller+novel+popular&printType=books&maxResults=6&key=AIzaSyC21UAOm0ycghpyA2cBCFrhAQtNyt1Zv7g'
     );
     const data = await response.json();
     return data;
@@ -27,7 +27,7 @@ export default class BookService {
 
   static async getRecommendedBooks() {
     const response = await fetch(
-      'https://www.googleapis.com/books/v1/volumes?q=intitle:Harry+Potter&printType=books&maxResults=6&key=AIzaSyC21UAOm0ycghpyA2cBCFrhAQtNyt1Zv7g'
+      'https://www.googleapis.com/books/v1/volumes?q=intitle:Harry+Potter+and&printType=books&maxResults=6&key=AIzaSyC21UAOm0ycghpyA2cBCFrhAQtNyt1Zv7g'
     );
     const data = await response.json();
     return data;
